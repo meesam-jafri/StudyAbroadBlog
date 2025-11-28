@@ -18,10 +18,19 @@ a:hover {
 
 }
 
+#greeting {
+    text-align: center;
+    color: #423E3B;
+    font-family: 'Grenze Gotisch', serif;
+    font-size: 50px;
+    margin-bottom: 10px; /* Reduce gap below greeting */
+}
+
 /*headings*/
 h1 {
     text-align: center;
     color: #423E3B;
+    margin-top: 0px;
     margin-bottom: 5px;
     font-family: "Grenze Gotisch", serif;
     font-size: 110px;
