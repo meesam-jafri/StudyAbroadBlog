@@ -60,6 +60,7 @@ a:hover {
 
 .title-text{
     text-align: center;
+    line-height: 1.3;
 }
 
 .title h1 {
@@ -91,7 +92,7 @@ h1 {
 h2 {
 
     color: #423E3B;
-    border-left: 5px solid #FEA82F;
+    border-bottom: 5px solid #FEA82F;
     padding-left: 10px;
     margin-top: 30px;
     font-family: "Texturina", serif;
@@ -128,21 +129,43 @@ hr {
 /*buttons*/
 .country-buttons {
     text-align: center;
-    margin-top: 40px;
     font-family: "Texturina", serif;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+.country-uk {
+    background-image: url("images/uk-button2.jpg");
+}
+
+.country-usa {
+    background-image: url("images/usa-button2.png");
+}
+
+.country-germany {
+    background-image: url("images/germany-button2.jpg");
+}
+
 
 .btn {
     display: inline-block;
-    background-color: #d34e06;
     color: white;
-    padding: 12px 25px;
+    padding: 200px 500px;
     margin: 10px 15px;
+    border: 3px orange;
     border-radius: 8px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 50px;
     font-weight: bold;
     transition: 0.3s ease;
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.8);
 }
 
 .home-button{
@@ -219,22 +242,54 @@ body::after {
     box-shadow: 0px 3px 50px #423E3B;
 }
 
-/* Default (Study Abroad main banner) */
+/*main banener*/
 .title[data-country="study"] {
     background-image: url("images/index.jpg");
 }
 
-/* USA */
+/*usa*/
 .title[data-country="usa"] {
     background-image: url("images/usa_banner.png");
 }
 
-/* UK */
+/*uk*/
 .title[data-country="uk"] {
     background-image: url("images/uk_banner.png");
 }
 
-/* Germany */
+/*germany*/
 .title[data-country="germany"] {
     background-image: url("images/germany_banner.png");
+}
+
+/**/
+.contributors {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+    flex-wrap: wrap; /* helps on smaller screens */
+}
+
+.boxes {
+    width: 400px;
+    background-color: #fff1d4;
+    border: 3px solid #d34e06; 
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.boxes h2 {
+    font-family: "Grenze Gotisch", serif;
+    font-size: 30px;
+    color: #d34e06;
+    margin-bottom: 10px;
+}
+
+.boxes p {
+    font-family: "Texturina", serif;
+    font-size: 20px;
+    color: #423E3B;
 }
