@@ -31,7 +31,7 @@ a:hover {
     margin-right: -20px;
     padding-left: 20px;
     padding-right: 20px;
-    box-shadow: 0px 3px 10px #423E3B;
+    box-shadow: 0px 3px 10px #000000;
 
     z-index: 2;  /* make sure greeting stays above image */
     position: relative; 
@@ -39,7 +39,6 @@ a:hover {
 
 /*title section*/
 .title{
-    background-image: url(images/mapwiththumbtacks.jpg); 
     background-size: cover;       
     background-position: center;  
     background-repeat: no-repeat;
@@ -211,4 +210,31 @@ body::after {
     content: "";
     display: block;
     height: 40px;
+}
+
+.title {
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+    box-shadow: 0px 3px 50px #423E3B;
+}
+
+/* Default (Study Abroad main banner) */
+.title[data-country="study"] {
+    background-image: url("images/index.jpg");
+}
+
+/* USA */
+.title[data-country="usa"] {
+    background-image: url("images/usa_banner.png");
+}
+
+/* UK */
+.title[data-country="uk"] {
+    background-image: url("images/uk_banner.png");
+}
+
+/* Germany */
+.title[data-country="germany"] {
+    background-image: url("images/germany_banner.png");
 }
