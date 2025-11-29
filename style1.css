@@ -3,7 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: fffaf0;
     margin: 0;
-    padding: 20px 80px;
+    padding: 0 20px;
     line-height: 1.6;
 }
 
@@ -20,11 +20,64 @@ a:hover {
 
 #greeting {
     text-align: center;
-    color: #423E3B;
+    color: #fffaf0;
     font-family: 'Grenze Gotisch', serif;
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 10px; /* Reduce gap below greeting */
+    background-color: #d34e06;  
+    padding: 15px 0;            
+    width: 100%;  
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0px 3px 10px #423E3B;
+
+    z-index: 2;  /* make sure greeting stays above image */
+    position: relative; 
 }
+
+/*title section*/
+.title{
+    background-image: url(images/mapwiththumbtacks.jpg); 
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+
+    width: calc(100% + 40px);  /* full width including body padding */
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 75px;
+    
+    height: 400px;
+    display: flex;
+    align-items: center;         
+    justify-content: center;
+
+    margin-top: -15px;           /* negative margin to overlap greeting */
+    z-index: 1;                  /* image goes behind greeting */
+    position: relative;
+}
+
+.title-text{
+    text-align: center;
+}
+
+.title h1 {
+    color: white;                  
+    font-size: 150px;
+    font-family: 'Grenze Gotisch', serif;
+    text-shadow: 0px 10px 25px rgba(0,0,0,0.6); /*shadow*/
+}
+
+.title .tagline {
+    color: white;
+    font-size: 44px;
+    font-family: 'Grenze Gotisch', serif;
+    text-shadow: 0px 5px 20px rgba(0,0,0,0.6);
+    margin-top: -20px;       /* spacing under heading */
+}
+
 
 /*headings*/
 h1 {
@@ -82,7 +135,7 @@ hr {
 
 .btn {
     display: inline-block;
-    background-color: #3891A6;
+    background-color: #d34e06;
     color: white;
     padding: 12px 25px;
     margin: 10px 15px;
@@ -93,12 +146,28 @@ hr {
     transition: 0.3s ease;
 }
 
+.home-button{
+    width: 100%;
+    background-color: #d34e06;   /* same as #greeting */
+    padding: 25px 0;              /* vertical spacing like greeting */
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* horizontal, vertical, blur, color */
+
+    z-index: 2;  /* make sure greeting stays above image */
+    position: relative; 
+}
+
 .home-btn {
     display: inline-block;
+    background-color: #ff6919;
     font-size: 16px;
     padding: 5px 20px;
     text-align: left;
     font-family: "Texturina", serif;
+    
 }
 
 .btn:hover {

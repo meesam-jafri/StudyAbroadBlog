@@ -3,11 +3,11 @@ let hour = now.getHours();
 let greeting;
 
 if (hour < 12) {
-  greeting = "Good morning!";
+  greeting = "Good morning, aspiring student!";
 } else if (hour < 18) {
-  greeting = "Good afternoon!";
+  greeting = "Good afternoon, aspiring student!";
 } else {
-  greeting = "Good evening!";
+  greeting = "Good evening, aspiring student!";
 }
 
 
