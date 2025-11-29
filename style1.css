@@ -60,6 +60,7 @@ a:hover {
 
 .title-text{
     text-align: center;
+    line-height: 1.1;
 }
 
 .title h1 {
@@ -236,5 +237,5 @@ body::after {
 
 /* Germany */
 .title[data-country="germany"] {
-    background-image: url("images/germany_banner.png");
+    background-image: url("images/germany.jpg");
 }
